@@ -41,3 +41,21 @@ describe('sayHello', function() {
     });
 
 });
+
+describe('isFive', function() {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean when executed', function() {
+        expect(typeof isFive()).toBe(`boolean`);
+    });
+    it('should return 5 when executed', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return false when "5" is executed', function() {
+        expect(isFive("5")).toBe(false);
+    });
+    it('should return false when 8 is executed', function() {
+        expect(isFive(8)).toBe(false);
+    });
+    });
